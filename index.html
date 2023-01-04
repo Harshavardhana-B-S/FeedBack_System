@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FeedBack System</title>
+</head>
+<body>
+          
+
+    <div class="main-content">
+
+     <div class="img-container">
+        <img src="Images/imag-1.svg" class="img-id">
+     </div>
+
+     <div class="contentbox">
+        <h3>How satisfied are you overall with the support of our Delivery Partner?*</h3>
+        <br>
+        <p>1-not at all satisfied</p>
+        <p>3-satisfied</p>
+        <P>5-very satisfied</P>
+
+        <div class="rating-box1">
+           <input type="number" placeholder="Number" class="rate-1" id="value-1">
+        </div>
+        
+        
+
+        <div class="rating-box2">
+         <h3>Please tell us your reason for giving this score</h3>
+
+        <textarea name="" class="text-area" cols="10" rows="5" placeholder="" id="value-2"></textarea>
+
+        <button class="add-btn" onclick="getInfo()" id="info-btn">Add Review</button>
+        </div>
+
+        <div class="rating-box-3">
+         <p>Click on the button below to see the reviews</p>
+           <button class="btn" onclick="display_1()">Rating-1</button>
+           <button class="btn" onclick="display_2()">Rating-2</button>
+           <button class="btn" onclick="display_3()">Rating-3</button>
+           <button class="btn" onclick="display_4()">Rating-4</button>
+           <button class="btn" onclick="display_5()">Rating-5</button>
+        </div>
+
+        <div class="container" id="display_container">
+   
+        </div>
+        
+     </div>
+   
+    </div>
+ 
+
+
+     <script src="./app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
